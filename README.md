@@ -30,7 +30,6 @@
 
 |Column|Type      |Options          |
 |------|----------|-----------------|
-|when  |string    |null: false      |    |
 |user  |references|foreign_key: true|
 |item  |references|foreign_key: true|
 
