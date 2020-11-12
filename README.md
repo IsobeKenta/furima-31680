@@ -35,10 +35,11 @@
 
 ## addressesテーブル
 
-|Column    |Type   |Options    |
-|----------|-------|-----------|
-|postel    |string |null: false|
-|prefecture|integer|null: false|
-|city      |string |null: false|
-|number    |string |null: false|
-|tel       |string |null: false|
+|Column       |Type   |Options    |
+|-------------|-------|-----------|
+|postel       |string |null: false|
+|prefecture   |integer|null: false|
+|city         |string |null: false|
+|house_number |string |null: false|
+|building_name|string ||
+|tel          |string |null: false|
