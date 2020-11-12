@@ -59,4 +59,4 @@
 |tel          |string |null: false|
 
 ### Association
-- has_one :order
+- belongs_to :order
