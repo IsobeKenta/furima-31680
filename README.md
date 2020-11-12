@@ -11,6 +11,10 @@
 |first_name_kana   |string|null: false|
 |date              |string|null: false|
 
+### Association
+- has_many :items
+- has_many :orders
+
 
 
 ## itemsテーブル
@@ -26,12 +30,22 @@
 |prefecture    |integer|null: false|
 |days          |integer|null: false|
 
+### Association
+- belongs_to :user
+- has_many :orders
+
 ## ordersテーブル
 
 |Column|Type      |Options          |
 |------|----------|-----------------|
 |user  |references|foreign_key: true|
 |item  |references|foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :item
+- belongs_to :address
+
 
 ## addressesテーブル
 
@@ -41,5 +55,8 @@
 |prefecture   |integer|null: false|
 |city         |string |null: false|
 |house_number |string |null: false|
-|building_name|string ||
+|building_name|string |           |
 |tel          |string |null: false|
+
+### Association
+- has_one :order
