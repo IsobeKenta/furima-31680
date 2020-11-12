@@ -19,12 +19,12 @@
 |--------------|-------|-----------|
 |product       |string |null: false|
 |explanation   |text   |null: false|
-|categori      |string |null: false|
-|status        |string |null: false|
+|type          |integer|null: false|
+|status        |integer|null: false|
 |price         |integer|null: false|
 |delivery_price|integer|null: false|
-|source        |string |null: false|
-|days          |string |null: false|
+|prefecture    |integer|null: false|
+|days          |integer|null: false|
 
 ## ordersテーブル
 
