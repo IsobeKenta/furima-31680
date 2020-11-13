@@ -25,7 +25,7 @@
 |explanation   |text   |null: false|
 |type          |integer|null: false|
 |status_id     |integer|null: false|
-|price         |integer|null: false|
+|price         |string |null: false|
 |delivery_price|integer|null: false|
 |prefecture    |integer|null: false|
 |days          |integer|null: false|
