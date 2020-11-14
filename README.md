@@ -19,16 +19,17 @@
 
 ## itemsテーブル
 
-|Column        |Type   |Options    |
-|--------------|-------|-----------|
-|product       |string |null: false|
-|explanation   |text   |null: false|
-|type          |integer|null: false|
-|status_id     |integer|null: false|
-|price         |string |null: false|
-|delivery_price|integer|null: false|
-|prefecture    |integer|null: false|
-|days          |integer|null: false|
+|Column        |Type      |Options          |
+|--------------|----------|-----------------|
+|product       |string    |null: false      |
+|explanation   |text      |null: false      |
+|type          |integer   |null: false      |
+|status_id     |integer   |null: false      |
+|price         |string    |null: false      |
+|delivery_price|integer   |null: false      |
+|prefecture    |integer   |null: false      |
+|days          |integer   |null: false      |
+|user          |references|foreign_key: true|
 
 ### Association
 - belongs_to :user
