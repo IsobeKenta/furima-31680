@@ -7,5 +7,6 @@ class Item < ApplicationRecord
   belongs_to_active_hash :delivaly_price
   belongs_to_active_hash :ship
 
-  
+  validates :product, :explanation, :price, presence: true
+  validates :type, :status_id, :delivaly_price, :prefecture, :ship, numericality: { other_than: 1 }
 end
