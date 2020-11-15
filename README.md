@@ -28,7 +28,7 @@
 |price         |string    |null: false      |
 |delivery_price|integer   |null: false      |
 |prefecture    |integer   |null: false      |
-|days          |integer   |null: false      |
+|ship          |integer   |null: false      |
 |user          |references|foreign_key: true|
 
 ### Association
