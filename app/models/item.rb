@@ -9,7 +9,6 @@ class Item < ApplicationRecord
   belongs_to_active_hash :ship
   validates :image, presence: true
   validates :product, :explanation, presence: true
-  validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9999999}
+  validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
   validates :type_id, :status_id_id, :delivaly_price_id, :prefecture_id, :ship_id, numericality: { other_than: 0 }
-  
 end
