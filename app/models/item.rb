@@ -11,4 +11,12 @@ class Item < ApplicationRecord
   validates :image, :product, :explanation, presence: true
   validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
   validates :type_id, :status_id_id, :delivaly_price_id, :prefecture_id, :ship_id, numericality: { other_than: 0 }
+
+  def self.search(search)
+    if search != ""
+      Item.where('product LIKE(?)', "%#{search}%")
+    else
+      Item.all
+    end
+  end
 end
